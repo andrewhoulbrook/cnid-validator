@@ -1,8 +1,11 @@
+// Mapping of China's national administrative geographic region codes to region names (with Pinyin and English translations)
+// This dataset includes all codes in current use (2018)
+// This dataset also includes as many historic codes that could identified found research of online and open sources. 
 adminGeo = {
     "110000": [
-        "北京市", 
-        "bei jing shi", 
-        "Beijing"
+        '北京市', 
+        'bei jing shi', 
+        'Beijing'
     ], 
     "110100": [
         "市辖区", 
