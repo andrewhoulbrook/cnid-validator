@@ -20,11 +20,15 @@ China's first-generation ID card typically bore a 15-digit ID number, issued by 
 
 All second-generation ID cards feature a 18-digit ID number. Each second-generation ID card must, by law, contain the following uniform information shown below.
 
-![Example of a Chinese National ID Card](/doc/id_card_v2.png)
+<p align="center">
+  <img src="/doc/ID_Card.png">
+</p>
 
 China's 18-digit ID number breaks down as shown below. 
 
-![Structure of a Chinese 18-digit ID number](/doc/id_number.png)
+<p align="center">
+  <img src="/doc/ID_NumString.png">
+</p>
 
 The first series of digits correspond to China's administrative geography. Digits 7 through to 14 are the card holder's date of birth (formatted YYYYMMDD). Remaining digits help disambiguate individuals with the same location and date of birth. 
 
@@ -80,19 +84,21 @@ npn install pug
 
 The Node server listens of port 4001 rendering the following skeleton HTML page for user input.
 
-![User Input Form](/doc/form.png)
+<p align="center">
+  <img src="/doc/form.png">
+</p>
 
 The results of validating a given ID number and extracting the basic card holder information is returned as a JSON array. 
 
 Here's an example output from the ID number used in the sample images show above (it's fictional number so doesn't validate):
 
-'''
+```
 {
    "id": "110102197810272321",
    "validation": "INVALID",
    "gender": {
-      "chinese": "男",
-      "english": "Male"
+      "chinese": "女",
+      "english": "Female"
    },
    "dob": {
       "birthYear": "1978",
@@ -116,11 +122,12 @@ Here's an example output from the ID number used in the sample images show above
       "english": "Xicheng District"
    }
 }
-'''
+```
 
 ## Future Developments
 
-Explore adding error handling in Node.js and with the Express framework.
+* Explore adding error handling in Node.js and with the Express framework.
+* Validation of ID numbers in bulk. 
 
 ## Built With
 
