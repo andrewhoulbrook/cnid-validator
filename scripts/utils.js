@@ -37,7 +37,7 @@ function upgrade(idNumber) {
 function makeCNID (idNumber) {
     cnid = {};
     cnid.id = idNumber;
-    cnid.gender = genderDict[(parseInt(idNumber.substr(-2))) % 2]; // Odd numbers = Male, Even numbers = Female
+    cnid.gender = genderDict[(parseInt(idNumber.substr(-2,1))) % 2]; // Odd numbers = Male, Even numbers = Female
     cnid.dob = { birthYear : idNumber.substr(6,4), birthMonth : idNumber.substr(10,2), birthDay : idNumber.substr(12,2) };
     today = new Date();
     cnid.age = today.getFullYear() - parseInt(cnid.dob['birthYear']);

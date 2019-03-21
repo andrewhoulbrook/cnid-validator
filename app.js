@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 app.post('/', [
     // Sanitize the user's input
     sanitizeQuery('idInput').trim().escape(),
-    check('idInput').isLength({ max: 18 }.isNumeric())
+    check('idInput').isLength({ max: 18 }).isNumeric()
     ], (req, res) => {
         let idString; idString = req.body.idInput;
         let idNumber;
