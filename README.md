@@ -40,8 +40,6 @@ There are many online ID card validators that do exactly what i've done here. Ma
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 The validation and data extraction scripts are written in JavaScript. The scripts intended to be run server-side in Node.js. This is a first attempt for me at experimenting with Express and Node.js. 
@@ -138,7 +136,7 @@ Here's an example output from the ID number used in the sample images show above
 
 ## Authors
 
-* **Andrew Houlbrook** - *Initial work* - [ba2baha3o](https://github.com/ba2baha3o)
+* **Andrew Houlbrook** - *Initial work* - [andrewhoulbrook](https://github.com/andrewhoulbrook)
 
 ## License
 
